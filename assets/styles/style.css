@@ -4,9 +4,8 @@
   box-sizing: border-box;
 }
 
-:root{
+:root {
   font-size: 62.5%; /*equivale a dividir por 10*/
-
 }
 
 #container {
@@ -81,7 +80,7 @@ body {
 
 .card_back {
   color: white;
-  background-color: #D5604A;
+  background-color: #d5604a;
   font-size: 30px;
 }
 
@@ -113,20 +112,18 @@ body {
   font-size: 40px;
   display: flex;
   margin-left: 4rem;
-  
 }
 
-.text-count{
-    width: 100%;
-    color: white;
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 20px;
+.text-count {
+  width: 100%;
+  color: white;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
 }
-
 
 @media only screen and (max-width: 700px) {
   #gameBoard {
@@ -134,12 +131,12 @@ body {
     gap: 1rem !important;
   }
 
-  #container{
+  #container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4rem ;
+    padding: 4rem;
   }
   .card {
     width: 80px;

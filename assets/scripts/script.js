@@ -47,7 +47,6 @@ function createCardFace(face, card, element) {
 }
 
 function flipCard() {
-
   if (game.setCard(this.id)) {
     count();
     this.classList.add("flip");
@@ -79,9 +78,9 @@ function count() {
   countCLickDiv.textContent = countClick;
 }
 
-function showValue(){
-    let countValue = document.getElementById("countValue");
-    countValue.textContent = `${countClick} de cliques`
+function showValue() {
+  let countValue = document.getElementById("countValue");
+  countValue.textContent = `${countClick} de cliques`;
 }
 
 function restart() {
