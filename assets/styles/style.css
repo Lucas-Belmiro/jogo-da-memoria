@@ -4,10 +4,17 @@
   box-sizing: border-box;
 }
 
+:root{
+  font-size: 62.5%; /*equivale a dividir por 10*/
+
+}
+
 #container {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: fit-content;
+  gap: 4rem;
 }
 
 body {
@@ -16,9 +23,10 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url("https://i.ibb.co/pWMS363/bg.jpg");
+  background-color: #171923;
   background-size: cover;
-  height: 100%;
+  font-size: 1.6rem;
+  height: 100vh;
 }
 
 #gameBoard {
@@ -38,10 +46,8 @@ body {
 }
 
 .card {
-  width: 100px;
-  height: 100px;
-  position: relative;
-
+  width: 9rem;
+  height: 9rem;
   -webkit-transform-style: preserve-3d;
   -webkit-transition: transform 0.5s;
   transform-style: preserve-3d;
@@ -75,7 +81,7 @@ body {
 
 .card_back {
   color: white;
-  background-color: #8234e9;
+  background-color: #D5604A;
   font-size: 30px;
 }
 
@@ -106,27 +112,26 @@ body {
   color: white;
   font-size: 40px;
   display: flex;
-  margin-left: 60px;
+  margin-left: 4rem;
+  
 }
 
 .text-count{
-    width: 70%;
+    width: 100%;
     color: white;
     font-size: 40px;
     display: flex;
-    margin-left: 60px;
-    flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
 }
 
 
 @media only screen and (max-width: 700px) {
-  .game-board {
+  #gameBoard {
     max-width: 400px;
-
-    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 1rem !important;
   }
 
   #container{
@@ -134,6 +139,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 4rem ;
   }
   .card {
     width: 80px;
